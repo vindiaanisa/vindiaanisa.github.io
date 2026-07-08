@@ -7,37 +7,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Figtree:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 :root {
-  --dark:    #1C2333;
-  --dark2:   #232B3E;
-  --dark3:   #2A3348;
-  --teal:    #2D7D6F;
-  --teal2:   #3A9E8E;
-  --purple:  #6B5FA0;
-  --purple2: #8B7DC0;
-  --cream:   #F5F0E8;
-  --cream2:  #EDE6D8;
-  --white:   #FFFFFF;
-  --text:    #1C2333;
-  --muted:   #6B7280;
-  --border:  rgba(255,255,255,0.1);
-  --border2: rgba(28,35,51,0.1);
+--dark: #1C2333;
+--dark2: #232B3E;
+--dark3: #2A3348;
+--teal: #2D7D6F;
+--teal2: #3A9E8E;
+--purple: #6B5FA0;
+--purple2: #8B7DC0;
+--cream: #F5F0E8;
+--cream2: #EDE6D8;
+--white: #FFFFFF;
+--text: #1C2333;
+--muted: #6B7280;
+--border: rgba(255,255,255,0.1);
+--border2: rgba(28,35,51,0.1);
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:'Figtree',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden}
-
 /* ── NAV ── */
 nav{position:sticky;top:0;z-index:100;background:var(--dark);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 40px;border-bottom:1px solid var(--border)}
 .nav-logo{font-family:'Playfair Display',serif;font-size:16px;color:var(--cream);cursor:pointer;letter-spacing:0.3px}
 .nav-links{display:flex;gap:2px}
 .nav-links a{color:rgba(255,255,255,0.4);font-size:11px;letter-spacing:1.2px;text-transform:uppercase;text-decoration:none;padding:6px 14px;border-radius:4px;transition:all 0.2s;cursor:pointer}
 .nav-links a:hover,.nav-links a.active{color:var(--cream);background:rgba(255,255,255,0.07)}
-
 /* ── PAGES ── */
 .page{display:none}.page.active{display:block}
-
 /* ══════════ PAGE 1 — HOME ══════════ */
-
 /* Hero */
 .hero{background:var(--dark);display:grid;grid-template-columns:1fr 1fr;min-height:260px}
 .hero-l{padding:48px 40px;display:flex;flex-direction:column;justify-content:center;border-right:1px solid var(--border)}
@@ -52,7 +48,6 @@ nav{position:sticky;top:0;z-index:100;background:var(--dark);height:52px;display
 .contact-info{display:flex;flex-direction:column;gap:8px;width:100%}
 .contact-row{display:flex;align-items:center;gap:10px;font-size:12px;color:rgba(255,255,255,0.5)}
 .contact-row svg{flex-shrink:0;opacity:0.6}
-
 /* About + Education */
 .two-col{display:grid;grid-template-columns:1fr 1fr}
 .col-l{padding:48px 40px;border-right:1px solid var(--border2);background:var(--white)}
@@ -68,7 +63,6 @@ nav{position:sticky;top:0;z-index:100;background:var(--dark);height:52px;display
 .cert-title{font-family:'Playfair Display',serif;font-size:18px;font-weight:600;color:var(--text);margin-bottom:10px}
 .cert-item{font-size:13px;color:var(--muted);font-weight:300;padding:5px 0;border-bottom:1px solid var(--border2)}
 .cert-item:last-child{border-bottom:none}
-
 /* Skills */
 .skills-section{background:var(--dark2);padding:48px 40px}
 .skills-section .eyebrow{color:rgba(255,255,255,0.4)}
@@ -78,7 +72,6 @@ nav{position:sticky;top:0;z-index:100;background:var(--dark);height:52px;display
 .skill-item:last-child{border-bottom:none}
 .skill-name{font-size:14px;font-weight:600;color:var(--cream);margin-bottom:5px}
 .skill-desc{font-size:12px;color:rgba(255,255,255,0.4);line-height:1.7;font-weight:300}
-
 /* ══════════ PAGE 2 — PROJECT 01 ══════════ */
 .proj-header{background:var(--dark);padding:40px 40px 32px;position:relative;overflow:hidden}
 .proj-header::after{content:'';position:absolute;right:-20px;top:-20px;width:140px;height:140px;border-radius:50%;background:var(--teal);opacity:0.15}
@@ -122,7 +115,6 @@ nav{position:sticky;top:0;z-index:100;background:var(--dark);height:52px;display
 .temuan-card-text{font-size:12px;color:rgba(255,255,255,0.45);line-height:1.6;font-weight:300}
 .tools-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
 .tool-tag{background:var(--dark);color:var(--teal2);font-size:11px;padding:5px 12px;border-radius:3px;font-weight:500}
-
 /* ══════════ PAGE 3 — PROJECT 02 ══════════ */
 .poster-slot{width:100%;aspect-ratio:2/3;background:var(--cream2);border:1.5px dashed rgba(28,35,51,0.2);display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:0}
 .poster-slot img{width:100%;height:100%;object-fit:contain}
@@ -132,7 +124,6 @@ nav{position:sticky;top:0;z-index:100;background:var(--dark);height:52px;display
 .tujuan-list li:last-child{border-bottom:none}
 .tujuan-num{width:22px;height:22px;border-radius:50%;background:var(--purple);color:var(--white);font-size:10px;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
 .temuan-highlight{background:var(--cream2);border-left:3px solid var(--purple);padding:14px 16px;font-size:12px;color:var(--muted);line-height:1.75;font-weight:300;margin-bottom:16px;text-align:justify}
-
 /* ══════════ PAGE 4 — PROJECT 03 ══════════ */
 .greenmail-header{background:var(--dark);padding:40px 40px 32px;position:relative;overflow:hidden}
 .greenmail-header::after{content:'';position:absolute;right:-20px;top:-20px;width:140px;height:140px;border-radius:50%;background:var(--purple);opacity:0.15}
@@ -188,28 +179,25 @@ nav{position:sticky;top:0;z-index:100;background:var(--dark);height:52px;display
 .widget-btns{padding:10px 14px;display:flex;gap:8px}
 .widget-btn-primary{flex:1;background:var(--dark);color:var(--cream);border:none;padding:8px;font-size:11px;border-radius:5px;cursor:pointer;font-family:'Figtree',sans-serif;font-weight:500}
 .widget-btn-secondary{flex:1;background:transparent;color:var(--muted);border:1px solid var(--border2);padding:8px;font-size:11px;border-radius:5px;cursor:pointer;font-family:'Figtree',sans-serif}
-
 /* ── FOOTER ── */
 footer{background:var(--dark);padding:16px 40px;display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border)}
 .footer-left{font-size:11px;color:rgba(255,255,255,0.2);letter-spacing:0.5px}
 .footer-right{font-size:11px;color:rgba(255,255,255,0.2);letter-spacing:0.5px}
-
 /* ── RESPONSIVE ── */
 @media(max-width:768px){
-  nav{padding:0 16px}
-  .hero{grid-template-columns:1fr}
-  .hero-l{padding:32px 16px;border-right:none;border-bottom:1px solid var(--border)}
-  .hero-r{padding:24px 16px}
-  .two-col,.proj-two-col,.two-col-light,.feature-two-col{grid-template-columns:1fr}
-  .col-l,.col-r{padding:32px 16px}
-  .col-l{border-right:none;border-bottom:1px solid var(--border2)}
-  .proj-body,.skills-section,.impact-section,.feature-section{padding:32px 16px}
-  .proj-header,.greenmail-header{padding:32px 16px}
-  .col-light-l{border-right:none;border-bottom:1px solid var(--border2);padding:28px 16px}
-  .col-light-r{padding:28px 16px}
-  footer{padding:14px 16px;flex-direction:column;gap:4px;text-align:center}
+nav{padding:0 16px}
+.hero{grid-template-columns:1fr}
+.hero-l{padding:32px 16px;border-right:none;border-bottom:1px solid var(--border)}
+.hero-r{padding:24px 16px}
+.two-col,.proj-two-col,.two-col-light,.feature-two-col{grid-template-columns:1fr}
+.col-l,.col-r{padding:32px 16px}
+.col-l{border-right:none;border-bottom:1px solid var(--border2)}
+.proj-body,.skills-section,.impact-section,.feature-section{padding:32px 16px}
+.proj-header,.greenmail-header{padding:32px 16px}
+.col-light-l{border-right:none;border-bottom:1px solid var(--border2);padding:28px 16px}
+.col-light-r{padding:28px 16px}
+footer{padding:14px 16px;flex-direction:column;gap:4px;text-align:center}
 }
-
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 .hi{animation:fadeUp 0.5s ease both}
 .hero-name{animation:fadeUp 0.5s 0.08s ease both}
@@ -217,364 +205,340 @@ footer{background:var(--dark);padding:16px 40px;display:flex;justify-content:spa
 </style>
 </head>
 <body>
-
 <nav>
-  <span class="nav-logo" onclick="showPage('home')">Vindia Anisa</span>
-  <div class="nav-links">
-    <a id="nav-home" onclick="showPage('home')" class="active">Home</a>
-    <a id="nav-proj1" onclick="showPage('proj1')">Project 01</a>
-    <a id="nav-proj2" onclick="showPage('proj2')">Project 02</a>
-    <a id="nav-proj3" onclick="showPage('proj3')">Project 03</a>
-  </div>
+<span class="nav-logo" onclick="showPage('home')">Vindia Anisa</span>
+<div class="nav-links">
+<a id="nav-home" onclick="showPage('home')" class="active">Home</a>
+<a id="nav-proj1" onclick="showPage('proj1')">Project 01</a>
+<a id="nav-proj2" onclick="showPage('proj2')">Project 02</a>
+<a id="nav-proj3" onclick="showPage('proj3')">Project 03</a>
+</div>
 </nav>
 
 <!-- ══════════════════════════════════
-     PAGE 1 — HOME
+PAGE 1 — HOME
 ══════════════════════════════════ -->
 <div id="page-home" class="page active">
+<section class="hero">
+<div class="hero-l">
+<div class="hi">Hi! I'm</div>
+<h1 class="hero-name">Vindia Anisa</h1>
+<p class="hero-bio">Aspiring Environmental Engineer with a strong interest in sustainability, spatial analysis, and research-driven problem solving. Currently seeking opportunities to build practical experience and contribute to meaningful environmental projects.</p>
+</div>
+<div class="hero-r">
+<!-- ★ Gambar disimpan langsung di repo ini, dipanggil pakai nama file relatif -->
+<div class="photo-slot">
+<img src="image%20(3)%20(1)-fotor-bg-remover-2026040761357%20(1)-removebg-preview.jpg" alt="Vindia Anisa"
+onerror="this.parentElement.innerHTML='<div class=\'photo-placeholder\'>📷<span>Foto tidak ditemukan.<br>Cek nama file di repo.</span></div>'">
+</div>
+<div class="contact-info">
+<div class="contact-row">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+vindiaanisa@gmail.com
+</div>
+<div class="contact-row">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+www.linkedin.com/in/vindiaanisa
+</div>
+<div class="contact-row">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+Medan, North Sumatra
+</div>
+</div>
+</div>
+</section>
 
-  <section class="hero">
-    <div class="hero-l">
-      <div class="hi">Hi! I'm</div>
-      <h1 class="hero-name">Vindia Anisa</h1>
-      <p class="hero-bio">Aspiring Environmental Engineer with a strong interest in sustainability, spatial analysis, and research-driven problem solving. Currently seeking opportunities to build practical experience and contribute to meaningful environmental projects.</p>
-    </div>
-    <div class="hero-r">
-      <!-- ★ GANTI src dengan link foto kamu dari Imgur -->
-      <div class="photo-slot">
-        <img src="https://github.com/vindiaanisa/vindiaanisa.github.io/blob/main/image%20(3)%20(1)-fotor-bg-remover-2026040761357%20(1)-removebg-preview.jpg?raw=true" alt="Vindia Anisa"
-          onerror="this.parentElement.innerHTML='<div class=\'photo-placeholder\'>📷<span>Upload foto ke Imgur<br>lalu paste link-nya di sini</span></div>'">
-      </div>
-      <div class="contact-info">
-        <div class="contact-row">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          vindiaanisa@gmail.com
-        </div>
-        <div class="contact-row">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          www.linkedin.com/in/vindiaanisa
-        </div>
-        <div class="contact-row">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          Medan, North Sumatra
-        </div>
-      </div>
-    </div>
-  </section>
+<div class="two-col">
+<div class="col-l">
+<div class="eyebrow">Who am I</div>
+<h2 class="section-title">About <em>me</em></h2>
+<p class="body-text">Fresh graduate in Environmental Engineering from Universitas Sumatera Utara (January 2026). My work sits at the intersection of field research and spatial data analysis.</p>
+<p class="body-text">Actively seeking opportunities to contribute to sustainable environmental solutions through GIS mapping, lab research, and environmental impact assessment.</p>
+</div>
+<div class="col-r">
+<div class="eyebrow">Background</div>
+<h2 class="section-title">Education</h2>
+<div class="edu-name">Bachelor of Environmental Engineering</div>
+<div class="edu-uni">Universitas Sumatera Utara – Medan</div>
+<div class="edu-year">Graduated Jan 2026 · IPK 3.47 / 4.00</div>
+<div class="edu-divider"></div>
+<div class="cert-title">Certification</div>
+<div class="cert-item">INCO Academy (2025) — Green Digital Skills</div>
+<div class="cert-item">Teman Lab (2025) — Pelatihan AMDAL, UKL-UPL, SPPL</div>
+</div>
+</div>
 
-  <div class="two-col">
-    <div class="col-l">
-      <div class="eyebrow">Who am I</div>
-      <h2 class="section-title">About <em>me</em></h2>
-      <p class="body-text">Fresh graduate in Environmental Engineering from Universitas Sumatera Utara (January 2026). My work sits at the intersection of field research and spatial data analysis.</p>
-      <p class="body-text">Actively seeking opportunities to contribute to sustainable environmental solutions through GIS mapping, lab research, and environmental impact assessment.</p>
-    </div>
-    <div class="col-r">
-      <div class="eyebrow">Background</div>
-      <h2 class="section-title">Education</h2>
-      <div class="edu-name">Bachelor of Environmental Engineering</div>
-      <div class="edu-uni">Universitas Sumatera Utara – Medan</div>
-      <div class="edu-year">Graduated Jan 2026 · IPK 3.47 / 4.00</div>
-      <div class="edu-divider"></div>
-      <div class="cert-title">Certification</div>
-      <div class="cert-item">INCO Academy (2025) — Green Digital Skills</div>
-      <div class="cert-item">Teman Lab (2025) — Pelatihan AMDAL, UKL-UPL, SPPL</div>
-    </div>
-  </div>
+<section class="skills-section">
+<div class="eyebrow">What I bring</div>
+<h2 class="section-title"><em>Skills</em></h2>
+<div class="skill-item">
+<div class="skill-name">QGIS · Spatial Analysis</div>
+<div class="skill-desc">Able to perform buffer analysis, spatial joins, and multi-criteria scoring to produce classified maps for environmental decision-making.</div>
+</div>
+<div class="skill-item">
+<div class="skill-name">Environmental Research</div>
+<div class="skill-desc">Experienced in systematic field sampling, lab processing, and scientific report writing based on undergraduate thesis on microplastic research.</div>
+</div>
+<div class="skill-item">
+<div class="skill-name">AMDAL / UKL-UPL</div>
+<div class="skill-desc">Familiar with environmental impact assessment frameworks, baseline data collection, and mitigation planning.</div>
+</div>
+<div class="skill-item">
+<div class="skill-name">Data Visualisation</div>
+<div class="skill-desc">Able to produce publication-ready maps and charts using QGIS and Excel for environmental reporting.</div>
+</div>
+</section>
 
-  <section class="skills-section">
-    <div class="eyebrow">What I bring</div>
-    <h2 class="section-title"><em>Skills</em></h2>
-    <div class="skill-item">
-      <div class="skill-name">QGIS · Spatial Analysis</div>
-      <div class="skill-desc">Able to perform buffer analysis, spatial joins, and multi-criteria scoring to produce classified maps for environmental decision-making.</div>
-    </div>
-    <div class="skill-item">
-      <div class="skill-name">Environmental Research</div>
-      <div class="skill-desc">Experienced in systematic field sampling, lab processing, and scientific report writing based on undergraduate thesis on microplastic research.</div>
-    </div>
-    <div class="skill-item">
-      <div class="skill-name">AMDAL / UKL-UPL</div>
-      <div class="skill-desc">Familiar with environmental impact assessment frameworks, baseline data collection, and mitigation planning.</div>
-    </div>
-    <div class="skill-item">
-      <div class="skill-name">Data Visualisation</div>
-      <div class="skill-desc">Able to produce publication-ready maps and charts using QGIS and Excel for environmental reporting.</div>
-    </div>
-  </section>
-
-  <footer>
-    <span class="footer-left">Vindia Anisa — Environmental Portfolio 2026</span>
-    <span class="footer-right">1 / 4</span>
-  </footer>
+<footer>
+<span class="footer-left">Vindia Anisa — Environmental Portfolio 2026</span>
+<span class="footer-right">1 / 4</span>
+</footer>
 </div>
 
 <!-- ══════════════════════════════════
-     PAGE 2 — PROJECT 01
+PAGE 2 — PROJECT 01
 ══════════════════════════════════ -->
 <div id="page-proj1" class="page">
+<div class="proj-header">
+<div class="proj-eyebrow">Proyek 01 · GIS Analysis</div>
+<h1 class="proj-main-title">Peta Klasifikasi Akses Air Bersih<br>Kabupaten Deli Serdang</h1>
+<div class="proj-meta-row">
+<div class="proj-meta-item"><span class="proj-meta-label">Tahun</span><span class="proj-meta-value">2026</span></div>
+<div class="proj-meta-item"><span class="proj-meta-label">Tools</span><span class="proj-meta-value">QGIS 3.x</span></div>
+<div class="proj-meta-item"><span class="proj-meta-label">Metode</span><span class="proj-meta-value">Multi-Criteria Scoring</span></div>
+<div class="proj-meta-item"><span class="proj-meta-label">Proyeksi</span><span class="proj-meta-value">UTM Zone 47N</span></div>
+</div>
+</div>
+<div class="proj-body">
+<div class="proj-two-col">
+<div class="proj-left">
+<div class="proj-section-label">Peta Hasil</div>
+<!-- ★ Gambar disimpan langsung di repo ini, dipanggil pakai nama file relatif -->
+<div class="map-slot">
+<img src="PETA%20KLASIFIKASI%20AKSES%20AIR%20BERSIH_page-0001.jpg" alt="Peta Klasifikasi Akses Air Bersih Deli Serdang"
+onerror="this.parentElement.innerHTML='<div class=\'map-placeholder\'>🗺️<span>Gambar tidak ditemukan.<br>Cek nama file di repo.</span></div>'">
+</div>
 
-  <div class="proj-header">
-    <div class="proj-eyebrow">Proyek 01 · GIS Analysis</div>
-    <h1 class="proj-main-title">Peta Klasifikasi Akses Air Bersih<br>Kabupaten Deli Serdang</h1>
-    <div class="proj-meta-row">
-      <div class="proj-meta-item"><span class="proj-meta-label">Tahun</span><span class="proj-meta-value">2026</span></div>
-      <div class="proj-meta-item"><span class="proj-meta-label">Tools</span><span class="proj-meta-value">QGIS 3.x</span></div>
-      <div class="proj-meta-item"><span class="proj-meta-label">Metode</span><span class="proj-meta-value">Multi-Criteria Scoring</span></div>
-      <div class="proj-meta-item"><span class="proj-meta-label">Proyeksi</span><span class="proj-meta-value">UTM Zone 47N</span></div>
-    </div>
-  </div>
-
-  <div class="proj-body">
-    <div class="proj-two-col">
-      <div class="proj-left">
-        <div class="proj-section-label">Peta Hasil</div>
-        <!-- ★ GANTI src dengan link peta QGIS kamu dari Imgur -->
-        <div class="map-slot">
-          <img src="https://github.com/vindiaanisa/vindiaanisa.github.io/blob/main/PETA%20KLASIFIKASI%20AKSES%20AIR%20BERSIH_page-0001.jpg?raw=true" alt="Peta Klasifikasi Akses Air Bersih Deli Serdang"
-            onerror="this.parentElement.innerHTML='<div class=\'map-placeholder\'>🗺️<span>Upload screenshot peta QGIS ke Imgur<br>lalu paste link-nya di sini</span></div>'">
-        </div>
-
-        <div class="proj-section-label" style="margin-top:24px">Alur Metodologi</div>
-        <ul class="metodologi-list">
-          <li><span class="step-num">1</span><span><strong>Input Data</strong> — Import koordinat PDAM dari GoogleMap (CSV) dan shapefile sungai ke QGIS</span></li>
-          <li><span class="step-num">2</span><span><strong>Reproyeksi</strong> — Semua layer diproyeksi ke EPSG:32647 (UTM 47N)</span></li>
-          <li><span class="step-num">3</span><span><strong>Buffer Analysis</strong> — Penghitungan jaringan PDAM: 3km &amp; 7km · Sungai: 500m &amp; 1.5km</span></li>
-          <li><span class="step-num">4</span><span><strong>Spatial Join</strong> — Buffer disatukan ke layer kecamatan untuk penentuan skor</span></li>
-          <li><span class="step-num">5</span><span><strong>Scoring</strong> — Field Calculator: skor total = (skor pdam) + (skor sungai)</span></li>
-          <li><span class="step-num">6</span><span><strong>Klasifikasi &amp; Visualisasi</strong> — Graduated symbology 3 kelas, export PDF 300dpi</span></li>
-        </ul>
-      </div>
-
-      <div class="proj-right">
-        <div class="proj-section-label">Latar Belakang</div>
-        <p class="body-text" style="margin-bottom:20px">Ketimpangan akses air bersih di Kabupaten Deli Serdang mendorong perlunya pemetaan spasial berbasis data untuk mengidentifikasi pola aksesibilitas air bersih dan menentukan wilayah yang paling membutuhkan perbaikan infrastruktur.</p>
-
-        <div class="proj-section-label">Hasil Klasifikasi</div>
-        <div class="klasifikasi-row" style="margin-bottom:20px">
-          <div class="klas-card merah"><div class="klas-label merah">Merah</div><div class="klas-sub">Akses Terbatas<br>Skor 0–1</div></div>
-          <div class="klas-card kuning"><div class="klas-label kuning">Kuning</div><div class="klas-sub">Akses Sedang<br>Skor 2</div></div>
-          <div class="klas-card hijau"><div class="klas-label hijau">Hijau</div><div class="klas-sub">Akses Baik<br>Skor 3–4</div></div>
-        </div>
-
-        <div class="proj-section-label">Data Sumber</div>
-        <table class="data-table" style="margin-bottom:20px">
-          <thead><tr><th>Data</th><th>Sumber</th></tr></thead>
-          <tbody>
-            <tr><td>Batas Kecamatan</td><td>Badan Informasi Geospasial (BIG)</td></tr>
-            <tr><td>Jaringan Sungai</td><td>Badan Informasi Geospasial (BIG)</td></tr>
-            <tr><td>Lokasi PDAM</td><td>Survei Primer</td></tr>
-            <tr><td>Basemap</td><td>CartoDB Positron</td></tr>
-          </tbody>
-        </table>
-
-        <div class="proj-section-label">Sistem Skoring</div>
-        <table class="scoring-table" style="margin-bottom:20px">
-          <thead><tr><th>Parameter</th><th>Jarak</th><th>Skor</th><th>Bobot</th></tr></thead>
-          <tbody>
-            <tr><td>PDAM</td><td>3 km</td><td>2</td><td>50%</td></tr>
-            <tr><td>PDAM</td><td>3–7 km</td><td>1</td><td>50%</td></tr>
-            <tr><td>PDAM</td><td>&gt; 7 km</td><td>0</td><td>50%</td></tr>
-            <tr><td>Sungai</td><td>&lt; 500 m</td><td>2</td><td>50%</td></tr>
-            <tr><td>Sungai</td><td>500m–1.5km</td><td>1</td><td>50%</td></tr>
-            <tr><td>Sungai</td><td>&gt; 1.5 km</td><td>0</td><td>50%</td></tr>
-          </tbody>
-        </table>
-
-        <div class="proj-section-label">Temuan Utama</div>
-        <div class="temuan-card" style="margin-bottom:10px">
-          <div class="temuan-card-title">Wilayah Barat &amp; Selatan — Akses Terbatas</div>
-          <div class="temuan-card-text">Kecamatan di bagian barat dan selatan Deli Serdang memiliki skor rendah akibat jarak jauh dari instalasi PDAM dan minimnya sungai besar.</div>
-        </div>
-        <div class="temuan-card">
-          <div class="temuan-card-title">Rekomendasi Kebijakan</div>
-          <div class="temuan-card-text">Prioritaskan perluasan jaringan PDAM dan manfaatkan potensi sungai sebagai sumber air baku dengan pengolahan yang memadai.</div>
-        </div>
-        <div class="tools-row"><span class="tool-tag">QGIS 3.x</span><span class="tool-tag">Buffer Tool</span><span class="tool-tag">Spatial Join</span><span class="tool-tag">Field Calculator</span><span class="tool-tag">CartoDB XYZ</span></div>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <span class="footer-left">Vindia Anisa — Environmental Portfolio 2026</span>
-    <span class="footer-right">2 / 4</span>
-  </footer>
+<div class="proj-section-label" style="margin-top:24px">Alur Metodologi</div>
+<ul class="metodologi-list">
+<li><span class="step-num">1</span><span><strong>Input Data</strong> — Import koordinat PDAM dari GoogleMap (CSV) dan shapefile sungai ke QGIS</span></li>
+<li><span class="step-num">2</span><span><strong>Reproyeksi</strong> — Semua layer diproyeksi ke EPSG:32647 (UTM 47N)</span></li>
+<li><span class="step-num">3</span><span><strong>Buffer Analysis</strong> — Penghitungan jaringan PDAM: 3km &amp; 7km · Sungai: 500m &amp; 1.5km</span></li>
+<li><span class="step-num">4</span><span><strong>Spatial Join</strong> — Buffer disatukan ke layer kecamatan untuk penentuan skor</span></li>
+<li><span class="step-num">5</span><span><strong>Scoring</strong> — Field Calculator: skor total = (skor pdam) + (skor sungai)</span></li>
+<li><span class="step-num">6</span><span><strong>Klasifikasi &amp; Visualisasi</strong> — Graduated symbology 3 kelas, export PDF 300dpi</span></li>
+</ul>
+</div>
+<div class="proj-right">
+<div class="proj-section-label">Latar Belakang</div>
+<p class="body-text" style="margin-bottom:20px">Ketimpangan akses air bersih di Kabupaten Deli Serdang mendorong perlunya pemetaan spasial berbasis data untuk mengidentifikasi pola aksesibilitas air bersih dan menentukan wilayah yang paling membutuhkan perbaikan infrastruktur.</p>
+<div class="proj-section-label">Hasil Klasifikasi</div>
+<div class="klasifikasi-row" style="margin-bottom:20px">
+<div class="klas-card merah"><div class="klas-label merah">Merah</div><div class="klas-sub">Akses Terbatas<br>Skor 0–1</div></div>
+<div class="klas-card kuning"><div class="klas-label kuning">Kuning</div><div class="klas-sub">Akses Sedang<br>Skor 2</div></div>
+<div class="klas-card hijau"><div class="klas-label hijau">Hijau</div><div class="klas-sub">Akses Baik<br>Skor 3–4</div></div>
+</div>
+<div class="proj-section-label">Data Sumber</div>
+<table class="data-table" style="margin-bottom:20px">
+<thead><tr><th>Data</th><th>Sumber</th></tr></thead>
+<tbody>
+<tr><td>Batas Kecamatan</td><td>Badan Informasi Geospasial (BIG)</td></tr>
+<tr><td>Jaringan Sungai</td><td>Badan Informasi Geospasial (BIG)</td></tr>
+<tr><td>Lokasi PDAM</td><td>Survei Primer</td></tr>
+<tr><td>Basemap</td><td>CartoDB Positron</td></tr>
+</tbody>
+</table>
+<div class="proj-section-label">Sistem Skoring</div>
+<table class="scoring-table" style="margin-bottom:20px">
+<thead><tr><th>Parameter</th><th>Jarak</th><th>Skor</th><th>Bobot</th></tr></thead>
+<tbody>
+<tr><td>PDAM</td><td>3 km</td><td>2</td><td>50%</td></tr>
+<tr><td>PDAM</td><td>3–7 km</td><td>1</td><td>50%</td></tr>
+<tr><td>PDAM</td><td>&gt; 7 km</td><td>0</td><td>50%</td></tr>
+<tr><td>Sungai</td><td>&lt; 500 m</td><td>2</td><td>50%</td></tr>
+<tr><td>Sungai</td><td>500m–1.5km</td><td>1</td><td>50%</td></tr>
+<tr><td>Sungai</td><td>&gt; 1.5 km</td><td>0</td><td>50%</td></tr>
+</tbody>
+</table>
+<div class="proj-section-label">Temuan Utama</div>
+<div class="temuan-card" style="margin-bottom:10px">
+<div class="temuan-card-title">Wilayah Barat &amp; Selatan — Akses Terbatas</div>
+<div class="temuan-card-text">Kecamatan di bagian barat dan selatan Deli Serdang memiliki skor rendah akibat jarak jauh dari instalasi PDAM dan minimnya sungai besar.</div>
+</div>
+<div class="temuan-card">
+<div class="temuan-card-title">Rekomendasi Kebijakan</div>
+<div class="temuan-card-text">Prioritaskan perluasan jaringan PDAM dan manfaatkan potensi sungai sebagai sumber air baku dengan pengolahan yang memadai.</div>
+</div>
+<div class="tools-row"><span class="tool-tag">QGIS 3.x</span><span class="tool-tag">Buffer Tool</span><span class="tool-tag">Spatial Join</span><span class="tool-tag">Field Calculator</span><span class="tool-tag">CartoDB XYZ</span></div>
+</div>
+</div>
+</div>
+<footer>
+<span class="footer-left">Vindia Anisa — Environmental Portfolio 2026</span>
+<span class="footer-right">2 / 4</span>
+</footer>
 </div>
 
 <!-- ══════════════════════════════════
-     PAGE 3 — PROJECT 02
+PAGE 3 — PROJECT 02
 ══════════════════════════════════ -->
 <div id="page-proj2" class="page">
-
-  <div class="proj-header">
-    <div class="proj-eyebrow">Proyek 02 · Environmental Research</div>
-    <h1 class="proj-main-title">Analisis Mikroplastik di Tanah<br><em style="font-style:italic;color:rgba(255,255,255,0.5);font-size:24px">Penelitian Skripsi</em></h1>
-    <div class="proj-meta-row">
-      <div class="proj-meta-item"><span class="proj-meta-label">Tahun</span><span class="proj-meta-value">2025 / 2026</span></div>
-      <div class="proj-meta-item"><span class="proj-meta-label">Metode</span><span class="proj-meta-value">Lab Analysis</span></div>
-      <div class="proj-meta-item"><span class="proj-meta-label">Lokasi</span><span class="proj-meta-value">Sumatera Utara</span></div>
-    </div>
-  </div>
-
-  <div class="proj-body">
-    <div class="proj-two-col">
-      <div class="proj-left">
-        <div class="proj-section-label">Poster Penelitian</div>
-        <!-- ★ GANTI src dengan link poster skripsi kamu dari Imgur -->
-        <div class="poster-slot">
-          <img src="https://github.com/vindiaanisa/vindiaanisa.github.io/blob/main/Green%20and%20Brown%20Modern%20Simple%20Minimalist%20Benefit%20Of%20Trees%20Infographic%20Poster%20(1).png?raw=true" alt="Poster Penelitian Mikroplastik"
-            onerror="this.parentElement.innerHTML='<div class=\'poster-placeholder\'>📄<span>Upload poster skripsi ke Imgur<br>lalu paste link-nya di sini</span></div>'">
-        </div>
-      </div>
-
-      <div class="proj-right">
-        <div class="proj-section-label">Latar Belakang</div>
-        <p class="body-text" style="text-align:justify;margin-bottom:20px">Mikroplastik telah teridentifikasi sebagai kontaminan yang tersebar luas di berbagai komponen lingkungan, termasuk tanah. Penelitian ini menganalisis keberadaan, konsentrasi, karakteristik dan rasio mikroplastik di sampel tanah pertanian cabai yang dalam budidayanya menggunakan mulsa plastik sebagai penutup tanah.</p>
-
-        <div class="proj-section-label">Tujuan Penelitian</div>
-        <ul class="tujuan-list" style="margin-bottom:20px">
-          <li><span class="tujuan-num">1</span><span>Mengidentifikasi keberadaan mikroplastik di sampel tanah</span></li>
-          <li><span class="tujuan-num">2</span><span>Menganalisis konsentrasi dan distribusi ukuran partikel</span></li>
-          <li><span class="tujuan-num">3</span><span>Mengkarakterisasi jenis polimer menggunakan analisis laboratorium</span></li>
-        </ul>
-
-        <div class="proj-section-label">Metodologi</div>
-        <p class="body-text" style="text-align:justify;margin-bottom:20px">Pengambilan sampel tanah dilakukan di beberapa titik lokasi. Sampel diproses melalui ekstraksi, filtrasi, dan identifikasi visual di bawah mikroskop. Juga dilakukan analisis kualitas tanah dan perhitungan statistik berupa rasio MPs terhadap hasil panen. Karakterisasi polimer dan uji kualitas tanah dilakukan menggunakan metode laboratorium.</p>
-
-        <div class="proj-section-label">Temuan Kunci</div>
-        <div class="temuan-highlight">Kontaminasi mikroplastik terdeteksi pada seluruh sampel yang menggunakan mulsa plastik, menunjukkan bahwa penggunaan mulsa menjadi salah satu sumber mikroplastik di tanah. Rasio panen dengan jumlah limpahan mikroplastik bervariasi, tergantung pada produktivitas lahan sebagai faktor utama intensitas beban. Korelasi mikroplastik tidak signifikan, sehingga dibutuhkan penelitian lebih lanjut.</div>
-
-        <div class="tools-row"><span class="tool-tag">Mikroskop</span><span class="tool-tag">RAMAN</span><span class="tool-tag">Density Separation</span><span class="tool-tag">Analisis Statistik</span></div>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <span class="footer-left">Vindia Anisa — Environmental Portfolio 2026</span>
-    <span class="footer-right">3 / 4</span>
-  </footer>
+<div class="proj-header">
+<div class="proj-eyebrow">Proyek 02 · Environmental Research</div>
+<h1 class="proj-main-title">Analisis Mikroplastik di Tanah<br><em style="font-style:italic;color:rgba(255,255,255,0.5);font-size:24px">Penelitian Skripsi</em></h1>
+<div class="proj-meta-row">
+<div class="proj-meta-item"><span class="proj-meta-label">Tahun</span><span class="proj-meta-value">2025 / 2026</span></div>
+<div class="proj-meta-item"><span class="proj-meta-label">Metode</span><span class="proj-meta-value">Lab Analysis</span></div>
+<div class="proj-meta-item"><span class="proj-meta-label">Lokasi</span><span class="proj-meta-value">Sumatera Utara</span></div>
+</div>
+</div>
+<div class="proj-body">
+<div class="proj-two-col">
+<div class="proj-left">
+<div class="proj-section-label">Poster Penelitian</div>
+<!-- ★ Gambar disimpan langsung di repo ini, dipanggil pakai nama file relatif -->
+<div class="poster-slot">
+<img src="Green%20and%20Brown%20Modern%20Simple%20Minimalist%20Benefit%20Of%20Trees%20Infographic%20Poster%20(1).png" alt="Poster Penelitian Mikroplastik"
+onerror="this.parentElement.innerHTML='<div class=\'poster-placeholder\'>📄<span>Gambar tidak ditemukan.<br>Cek nama file di repo.</span></div>'">
+</div>
+</div>
+<div class="proj-right">
+<div class="proj-section-label">Latar Belakang</div>
+<p class="body-text" style="text-align:justify;margin-bottom:20px">Mikroplastik telah teridentifikasi sebagai kontaminan yang tersebar luas di berbagai komponen lingkungan, termasuk tanah. Penelitian ini menganalisis keberadaan, konsentrasi, karakteristik dan rasio mikroplastik di sampel tanah pertanian cabai yang dalam budidayanya menggunakan mulsa plastik sebagai penutup tanah.</p>
+<div class="proj-section-label">Tujuan Penelitian</div>
+<ul class="tujuan-list" style="margin-bottom:20px">
+<li><span class="tujuan-num">1</span><span>Mengidentifikasi keberadaan mikroplastik di sampel tanah</span></li>
+<li><span class="tujuan-num">2</span><span>Menganalisis konsentrasi dan distribusi ukuran partikel</span></li>
+<li><span class="tujuan-num">3</span><span>Mengkarakterisasi jenis polimer menggunakan analisis laboratorium</span></li>
+</ul>
+<div class="proj-section-label">Metodologi</div>
+<p class="body-text" style="text-align:justify;margin-bottom:20px">Pengambilan sampel tanah dilakukan di beberapa titik lokasi. Sampel diproses melalui ekstraksi, filtrasi, dan identifikasi visual di bawah mikroskop. Juga dilakukan analisis kualitas tanah dan perhitungan statistik berupa rasio MPs terhadap hasil panen. Karakterisasi polimer dan uji kualitas tanah dilakukan menggunakan metode laboratorium.</p>
+<div class="proj-section-label">Temuan Kunci</div>
+<div class="temuan-highlight">Kontaminasi mikroplastik terdeteksi pada seluruh sampel yang menggunakan mulsa plastik, menunjukkan bahwa penggunaan mulsa menjadi salah satu sumber mikroplastik di tanah. Rasio panen dengan jumlah limpahan mikroplastik bervariasi, tergantung pada produktivitas lahan sebagai faktor utama intensitas beban. Korelasi mikroplastik tidak signifikan, sehingga dibutuhkan penelitian lebih lanjut.</div>
+<div class="tools-row"><span class="tool-tag">Mikroskop</span><span class="tool-tag">RAMAN</span><span class="tool-tag">Density Separation</span><span class="tool-tag">Analisis Statistik</span></div>
+</div>
+</div>
+</div>
+<footer>
+<span class="footer-left">Vindia Anisa — Environmental Portfolio 2026</span>
+<span class="footer-right">3 / 4</span>
+</footer>
 </div>
 
 <!-- ══════════════════════════════════
-     PAGE 4 — PROJECT 03
+PAGE 4 — PROJECT 03
 ══════════════════════════════════ -->
 <div id="page-proj3" class="page">
-
-  <div class="greenmail-header">
-    <div class="proj-eyebrow">Proyek 03 · Capstone Project</div>
-    <h1 class="proj-main-title">GreenMail: Widget pengelolaan Email<br>untuk pengurangan jejak karbon</h1>
-    <div class="proj-meta-row">
-      <div class="proj-meta-item"><span class="proj-meta-label">Tahun</span><span class="proj-meta-value">2025</span></div>
-      <div class="proj-meta-item"><span class="proj-meta-label">Issuer</span><span class="proj-meta-value">INCO Academy</span></div>
-      <div class="proj-meta-item"><span class="proj-meta-label">Type</span><span class="proj-meta-value">Capstone Project</span></div>
-    </div>
-  </div>
-
-  <div class="two-col-light">
-    <div class="col-light-l">
-      <div class="eyebrow" style="color:var(--teal)">Latar Belakang</div>
-      <p class="body-text" style="text-align:justify">Masalah umum yang dihadapi oleh pengguna teknologi, terutama pengguna aplikasi email, adalah kurangnya pemahaman tentang penggunaan email dalam lingkungan. Hal ini menyebabkan pengguna cenderung mengabaikan email yang sudah menumpuk selama bertahun-tahun. Tentu saja, penumpukan email ini secara tidak langsung berpengaruh pada jumlah karbon yang dihasilkan oleh server yang menyimpan email ini.</p>
-    </div>
-    <div class="col-light-r">
-      <div class="eyebrow" style="color:var(--teal)">Permasalahan Utama</div>
-      <ul class="bullet-list">
-        <li>Kurangnya kepedulian mengenai keberlanjutan dan jejak karbon pada pemakaian fasilitas digital</li>
-        <li>Kurangnya manajemen terhadap pesan email dan spam</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="two-col-light" style="border-top:1px solid var(--border2)">
-    <div class="col-light-l">
-      <div class="eyebrow" style="color:var(--teal)">Solusi</div>
-      <p class="body-text" style="margin-bottom:10px;font-weight:500;color:var(--text)">Greenmail, sebagai lightweight browser widget yang:</p>
-      <ul class="bullet-list">
-        <li>Menghitung estimasi carbon footprint email yang menumpuk</li>
-        <li>Mendeteksi email lama dan spam</li>
-        <li>Memberikan pengingat untuk membersihkan email dan spam</li>
-        <li>Membantu pengguna membangun kebiasaan digital yang bertanggung jawab</li>
-      </ul>
-    </div>
-    <div class="col-light-r">
-      <div class="eyebrow" style="color:var(--teal)">Mock Up Widget</div>
-      <div class="widget-container">
-        <div class="widget">
-          <div class="widget-header">
-            <span class="widget-header-title">Carbon Footprint</span>
-            <span class="widget-header-tag">Gmail</span>
-          </div>
-          <div class="widget-carbon">
-            <div class="widget-carbon-label">Today's carbon estimate</div>
-            <div class="widget-carbon-num"><span class="widget-carbon-big">4.2</span><span class="widget-carbon-unit">g CO₂</span></div>
-            <div class="widget-bar-wrap"><div class="widget-bar-fill"></div></div>
-            <div class="widget-bar-labels"><span class="widget-bar-label">0g</span><span class="widget-bar-label">Daily avg: 10g</span></div>
-          </div>
-          <div class="widget-inbox">
-            <div class="widget-inbox-label">Inbox overview</div>
-            <div class="widget-inbox-grid">
-              <div class="widget-stat total"><div class="widget-stat-num">1,243</div><div class="widget-stat-lbl">Total</div></div>
-              <div class="widget-stat old"><div class="widget-stat-num">347</div><div class="widget-stat-lbl">Old</div></div>
-              <div class="widget-stat spam"><div class="widget-stat-num">89</div><div class="widget-stat-lbl">Spam</div></div>
-            </div>
-          </div>
-          <div class="widget-tip">
-            <div class="widget-tip-label">Eco tip of the day</div>
-            Delete 347 old emails to save approximately <strong>1.4g CO₂</strong> in storage emissions.
-          </div>
-          <div class="widget-btns">
-            <button class="widget-btn-primary">Clean inbox</button>
-            <button class="widget-btn-secondary">View history</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="feature-section">
-    <div class="feature-two-col">
-      <div>
-        <div class="eyebrow" style="color:rgba(255,255,255,0.4)">Feature &amp; User Flow</div>
-        <div class="feature-group-title">Core Features</div>
-        <ul class="bullet-list" style="margin-bottom:0">
-          <li style="color:rgba(255,255,255,0.4);border-color:rgba(255,255,255,0.08)">Carbon footprint Tracker</li>
-          <li style="color:rgba(255,255,255,0.4);border-color:rgba(255,255,255,0.08)">Old email detection</li>
-          <li style="color:rgba(255,255,255,0.4);border-color:rgba(255,255,255,0.08)">Spam cleanup recommendation</li>
-          <li style="color:rgba(255,255,255,0.4);border-color:rgba(255,255,255,0.08)">Sustainability tips dashboard</li>
-        </ul>
-      </div>
-      <div>
-        <div class="eyebrow" style="color:rgba(255,255,255,0.4);margin-top:28px">User Flow</div>
-        <div class="flow-steps">
-          <span class="flow-step">Install widget</span>
-          <span class="flow-arrow">→</span>
-          <span class="flow-step">Scan inbox</span>
-          <span class="flow-arrow">→</span>
-          <span class="flow-step">View carbon estimate</span>
-          <span class="flow-arrow">→</span>
-          <span class="flow-step">Clean emails</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="impact-section">
-    <div class="eyebrow" style="color:var(--teal)">Expected Impact</div>
-    <div class="impact-box">Meningkatkan kesadaran masyarakat terhadap dampak lingkungan dari aktivitas digital sehari hari melalui pendekatan yang sederhana dan mudah diakses.</div>
-  </div>
-
-  <footer>
-    <span class="footer-left">Vindia Anisa — Environmental Portfolio 2026</span>
-    <span class="footer-right">4 / 4</span>
-  </footer>
+<div class="greenmail-header">
+<div class="proj-eyebrow">Proyek 03 · Capstone Project</div>
+<h1 class="proj-main-title">GreenMail: Widget pengelolaan Email<br>untuk pengurangan jejak karbon</h1>
+<div class="proj-meta-row">
+<div class="proj-meta-item"><span class="proj-meta-label">Tahun</span><span class="proj-meta-value">2025</span></div>
+<div class="proj-meta-item"><span class="proj-meta-label">Issuer</span><span class="proj-meta-value">INCO Academy</span></div>
+<div class="proj-meta-item"><span class="proj-meta-label">Type</span><span class="proj-meta-value">Capstone Project</span></div>
+</div>
+</div>
+<div class="two-col-light">
+<div class="col-light-l">
+<div class="eyebrow" style="color:var(--teal)">Latar Belakang</div>
+<p class="body-text" style="text-align:justify">Masalah umum yang dihadapi oleh pengguna teknologi, terutama pengguna aplikasi email, adalah kurangnya pemahaman tentang penggunaan email dalam lingkungan. Hal ini menyebabkan pengguna cenderung mengabaikan email yang sudah menumpuk selama bertahun-tahun. Tentu saja, penumpukan email ini secara tidak langsung berpengaruh pada jumlah karbon yang dihasilkan oleh server yang menyimpan email ini.</p>
+</div>
+<div class="col-light-r">
+<div class="eyebrow" style="color:var(--teal)">Permasalahan Utama</div>
+<ul class="bullet-list">
+<li>Kurangnya kepedulian mengenai keberlanjutan dan jejak karbon pada pemakaian fasilitas digital</li>
+<li>Kurangnya manajemen terhadap pesan email dan spam</li>
+</ul>
+</div>
+</div>
+<div class="two-col-light" style="border-top:1px solid var(--border2)">
+<div class="col-light-l">
+<div class="eyebrow" style="color:var(--teal)">Solusi</div>
+<p class="body-text" style="margin-bottom:10px;font-weight:500;color:var(--text)">Greenmail, sebagai lightweight browser widget yang:</p>
+<ul class="bullet-list">
+<li>Menghitung estimasi carbon footprint email yang menumpuk</li>
+<li>Mendeteksi email lama dan spam</li>
+<li>Memberikan pengingat untuk membersihkan email dan spam</li>
+<li>Membantu pengguna membangun kebiasaan digital yang bertanggung jawab</li>
+</ul>
+</div>
+<div class="col-light-r">
+<div class="eyebrow" style="color:var(--teal)">Mock Up Widget</div>
+<div class="widget-container">
+<div class="widget">
+<div class="widget-header">
+<span class="widget-header-title">Carbon Footprint</span>
+<span class="widget-header-tag">Gmail</span>
+</div>
+<div class="widget-carbon">
+<div class="widget-carbon-label">Today's carbon estimate</div>
+<div class="widget-carbon-num"><span class="widget-carbon-big">4.2</span><span class="widget-carbon-unit">g CO₂</span></div>
+<div class="widget-bar-wrap"><div class="widget-bar-fill"></div></div>
+<div class="widget-bar-labels"><span class="widget-bar-label">0g</span><span class="widget-bar-label">Daily avg: 10g</span></div>
+</div>
+<div class="widget-inbox">
+<div class="widget-inbox-label">Inbox overview</div>
+<div class="widget-inbox-grid">
+<div class="widget-stat total"><div class="widget-stat-num">1,243</div><div class="widget-stat-lbl">Total</div></div>
+<div class="widget-stat old"><div class="widget-stat-num">347</div><div class="widget-stat-lbl">Old</div></div>
+<div class="widget-stat spam"><div class="widget-stat-num">89</div><div class="widget-stat-lbl">Spam</div></div>
+</div>
+</div>
+<div class="widget-tip">
+<div class="widget-tip-label">Eco tip of the day</div>
+Delete 347 old emails to save approximately <strong>1.4g CO₂</strong> in storage emissions.
+</div>
+<div class="widget-btns">
+<button class="widget-btn-primary">Clean inbox</button>
+<button class="widget-btn-secondary">View history</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="feature-section">
+<div class="feature-two-col">
+<div>
+<div class="eyebrow" style="color:rgba(255,255,255,0.4)">Feature &amp; User Flow</div>
+<div class="feature-group-title">Core Features</div>
+<ul class="bullet-list" style="margin-bottom:0">
+<li style="color:rgba(255,255,255,0.4);border-color:rgba(255,255,255,0.08)">Carbon footprint Tracker</li>
+<li style="color:rgba(255,255,255,0.4);border-color:rgba(255,255,255,0.08)">Old email detection</li>
+<li style="color:rgba(255,255,255,0.4);border-color:rgba(255,255,255,0.08)">Spam cleanup recommendation</li>
+<li style="color:rgba(255,255,255,0.4);border-color:rgba(255,255,255,0.08)">Sustainability tips dashboard</li>
+</ul>
+</div>
+<div>
+<div class="eyebrow" style="color:rgba(255,255,255,0.4);margin-top:28px">User Flow</div>
+<div class="flow-steps">
+<span class="flow-step">Install widget</span>
+<span class="flow-arrow">→</span>
+<span class="flow-step">Scan inbox</span>
+<span class="flow-arrow">→</span>
+<span class="flow-step">View carbon estimate</span>
+<span class="flow-arrow">→</span>
+<span class="flow-step">Clean emails</span>
+</div>
+</div>
+</div>
+</div>
+<div class="impact-section">
+<div class="eyebrow" style="color:var(--teal)">Expected Impact</div>
+<div class="impact-box">Meningkatkan kesadaran masyarakat terhadap dampak lingkungan dari aktivitas digital sehari hari melalui pendekatan yang sederhana dan mudah diakses.</div>
+</div>
+<footer>
+<span class="footer-left">Vindia Anisa — Environmental Portfolio 2026</span>
+<span class="footer-right">4 / 4</span>
+</footer>
 </div>
 
 <script>
 function showPage(id){
-  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
-  document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
-  document.getElementById('page-'+id).classList.add('active');
-  document.getElementById('nav-'+id).classList.add('active');
-  window.scrollTo({top:0,behavior:'smooth'});
+document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('active'));
+document.getElementById('page-'+id).classList.add('active');
+document.getElementById('nav-'+id).classList.add('active');
+window.scrollTo({top:0,behavior:'smooth'});
 }
 </script>
 </body>
